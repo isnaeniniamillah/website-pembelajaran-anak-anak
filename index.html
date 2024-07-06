@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Willen Study</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: Arial, sans-serif;
+		}
+
+		body {
+			display: flex;
+			flex-direction: column;
+			min-height: 100vh;
+		}
+
+		header {
+			position: relative;
+			color: white;
+			text-align: center;
+			height: 300px;
+			/* Adjust height as needed */
+		}
+
+		header video {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			z-index: -1;
+		}
+
+		.header-content {
+			position: relative;
+			z-index: 1;
+			padding: 60px 0;
+		}
+
+		.content {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			padding: 20px;
+		}
+
+		.section {
+			background-color: #FFDAB9;
+			margin: 10px;
+			padding: 20px;
+			flex: 1 1 calc(20% - 40px);
+			/* 5 sections with margin */
+			min-width: 200px;
+			/* Minimum width for responsive design */
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			border-radius: 8px;
+			text-align: center;
+			transition: transform 0.3s ease-in-out;
+			/* Efek transisi saat hover */
+			cursor: pointer;
+			/* Menjadikan cursor pointer saat hover */
+		}
+
+		.section img {
+			max-width: 100%;
+			height: auto;
+			margin-bottom: 10px;
+		}
+
+		.section:hover {
+			transform: scale(1.05);
+			/* Efek zoom in saat hover */
+		}
+
+		.section a {
+			display: block;
+			margin-top: 10px;
+			color: #4CAF50;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		.section a:hover {
+			text-decoration: underline;
+		}
+
+		footer {
+			background-color: #333;
+			color: white;
+			text-align: center;
+			padding: 10px 0;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<video autoplay muted loop>
+			<source src="header.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+	</header>
+	<div class="content">
+		<div class="section" onclick="navigateTo('angka/angka.html')">
+			<h2>Belajar Angka</h2>
+			<img src="angka.png" alt="Belajar Angka">
+		</div>
+		<div class="section" onclick="navigateTo('huruf/huruf.html')">
+			<h2>Belajar Huruf</h2>
+			<img src="huruf.png" alt="Belajar Huruf">
+		</div>
+		<div class="section" onclick="navigateTo('warna/warna.html')">
+			<h2>Belajar Warna</h2>
+			<img src="warna.png" alt="Belajar Warna">
+		</div>
+		<div class="section" onclick="navigateTo('hewan/hewan.html')">
+			<h2>Belajar Suara Hewan</h2>
+			<img src="hewan.png" alt="Belajar Suara Hewan">
+		</div>
+		<div class="section" onclick="navigateTo('planet/planet.html')">
+			<h2>Belajar Planet</h2>
+			<img src="planet.png" alt="Belajar Planet">
+		</div>
+	</div>
+	<footer>
+		<p>© 2024 Willen Study</p>
+	</footer>
+
+	<script>
+		function navigateTo(url) {
+			window.location.href = url; // Mengarahkan ke halaman atau bagian berikutnya
+		}
+	</script>
+</body>
+
+</html>

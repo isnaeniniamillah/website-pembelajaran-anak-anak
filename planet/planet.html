@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Willen Study</title>
+	<script src='suara.js' type='text/javascript'></script>
+	<style>
+		/* Tambahkan style untuk tampilan yang lebih menarik */
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #87CEEB;
+			/* Mengatur warna latar belakang menjadi biru muda */
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		#container {
+			padding: 20px;
+		}
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+		}
+
+		td {
+			padding: 10px;
+			text-align: center;
+		}
+
+		.planet {
+			width: 150px;
+			height: 150px;
+			/* Menghapus border-radius untuk membuat kotak */
+			transition: transform 0.3s;
+			cursor: pointer;
+		}
+
+		.planet:hover {
+			transform: scale(1.2);
+		}
+
+		.planet1 {
+			font-size: 14px;
+			font-weight: bold;
+		}
+
+		#navigasi1 {
+			margin-top: 20px;
+			width: 100%;
+			text-align: center;
+		}
+
+		#navigasi1 ul {
+			list-style-type: none;
+			padding: 0;
+			display: inline-block;
+			margin: 0 auto;
+		}
+
+		#navigasi1 ul li {
+			display: inline;
+			margin-right: 10px;
+		}
+
+		#navigasi1 ul li a {
+			text-decoration: none;
+			color: #333;
+			font-weight: bold;
+			font-size: 16px;
+			display: inline-block;
+			padding: 10px 20px;
+			border: 2px solid #333;
+			border-radius: 5px;
+			transition: all 0.3s ease;
+		}
+
+		#navigasi1 ul li a:hover {
+			background-color: #333;
+			color: #fff;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div id="container">
+		<table>
+			<tr>
+				<td onclick="merkurius.playclip()"><a href="#">
+						<img class="planet" src="image/merkurius.png" alt="merkurius">
+					</a></td>
+				<td style="width:10px"></td>
+				<td onclick="venus.playclip()"><a href="#">
+						<img class="planet" src="image/venus.png" alt="venus">
+					</a></td>
+				<td style="width:10px"></td>
+				<td onclick="bumi.playclip()"><a href="#">
+						<img class="planet" src="image/bumi.png" alt="bumi">
+					</a></td>
+				<td style="width:10px"></td>
+				<td onclick="mars.playclip()"><a href="#">
+						<img class="planet" src="image/mars.png" alt="mars">
+					</a></td>
+			</tr>
+			<tr>
+				<td class="planet1">MERKURIUS</td>
+				<td style="width:10px"></td>
+				<td class="planet1">VENUS</td>
+				<td style="width:10px"></td>
+				<td class="planet1">BUMI</td>
+				<td style="width:10px"></td>
+				<td class="planet1">MARS</td>
+			</tr>
+			<!-- Baris-baris tambahan untuk planet -->
+			<tr>
+				<td style="height:10px"></td>
+			</tr>
+			<tr>
+				<td onclick="jupiter.playclip()"><a href="#">
+						<img class="planet" src="image/jupiter.png" alt="jupiter">
+					</a></td>
+				<td></td>
+				<td onclick="saturnus.playclip()"><a href="#">
+						<img class="planet" src="image/saturnus.png" alt="saturnus">
+					</a></td>
+				<td></td>
+				<td onclick="uranus.playclip()"><a href="#">
+						<img class="planet" src="image/uranus.png" alt="uranus">
+					</a></td>
+				<td></td>
+				<td onclick="neptunus.playclip()"><a href="#">
+						<img class="planet" src="image/neptunus.png" alt="neptunus">
+					</a></td>
+			</tr>
+			<tr>
+				<td class="planet1">JUPITER</td>
+				<td></td>
+				<td class="planet1">SATURNUS</td>
+				<td></td>
+				<td class="planet1">URANUS</td>
+				<td></td>
+				<td class="planet1">NEPTUNUS</td>
+			</tr>
+		</table>
+
+		<div id="navigasi1">
+			<ul>
+				<li><a href="../index.html">KEMBALI</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+
+</html>

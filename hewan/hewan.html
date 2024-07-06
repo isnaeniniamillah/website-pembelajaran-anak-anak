@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Willen Study</title>
+	<script src='suara.js' type='text/javascript'></script>
+	<style>
+		/* Tambahkan style untuk tampilan yang lebih menarik */
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #87CEEB;
+			/* Mengatur warna latar belakang menjadi biru muda */
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		#container {
+			padding: 20px;
+		}
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+		}
+
+		td {
+			padding: 10px;
+			text-align: center;
+		}
+
+		.hewan {
+			width: 150px;
+			height: 150px;
+			/* Menghapus border-radius untuk membuat kotak */
+			transition: transform 0.3s;
+			cursor: pointer;
+		}
+
+		.hewan:hover {
+			transform: scale(1.2);
+		}
+
+		.hewan1 {
+			font-size: 14px;
+			font-weight: bold;
+		}
+
+		#navigasi1 {
+			margin-top: 20px;
+			width: 100%;
+			text-align: center;
+		}
+
+		#navigasi1 ul {
+			list-style-type: none;
+			padding: 0;
+			display: inline-block;
+			margin: 0 auto;
+		}
+
+		#navigasi1 ul li {
+			display: inline;
+			margin-right: 10px;
+		}
+
+		#navigasi1 ul li a {
+			text-decoration: none;
+			color: #333;
+			font-weight: bold;
+			font-size: 16px;
+			display: inline-block;
+			padding: 10px 20px;
+			border: 2px solid #333;
+			border-radius: 5px;
+			transition: all 0.3s ease;
+		}
+
+		#navigasi1 ul li a:hover {
+			background-color: #333;
+			color: #fff;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div id="container">
+		<table>
+			<tr>
+				<td onclick="anjing.playclip()"><a href="#">
+						<img class="hewan" src="image/anjing.png" alt="anjing">
+					</a></td>
+				<td style="width:10px"></td>
+				<td onclick="ayam.playclip()"><a href="#">
+						<img class="hewan" src="image/ayam.png" alt="ayam">
+					</a></td>
+				<td style="width:10px"></td>
+				<td onclick="babi.playclip()"><a href="#">
+						<img class="hewan" src="image/babi.png" alt="babi">
+					</a></td>
+				<td style="width:10px"></td>
+				<td onclick="bebek.playclip()"><a href="#">
+						<img class="hewan" src="image/bebek.png" alt="bebek">
+					</a></td>
+				<td style="width:10px"></td>
+				<td onclick="beruang.playclip()"><a href="#">
+						<img class="hewan" src="image/beruang.png" alt="beruang">
+					</a></td>
+				<td style="width:10px"></td>
+				<td onclick="burunghantu.playclip()"><a href="#">
+						<img class="hewan" src="image/burung hantu.png" alt="burung hantu">
+					</a></td>
+			</tr>
+			<tr>
+				<td class="hewan1">ANJING</td>
+				<td style="width:10px"></td>
+				<td class="hewan1">AYAM</td>
+				<td style="width:10px"></td>
+				<td class="hewan1">BABI</td>
+				<td style="width:10px"></td>
+				<td class="hewan1">BEBEK</td>
+				<td style="width:10px"></td>
+				<td class="hewan1">BERUANG</td>
+				<td style="width:10px"></td>
+				<td class="hewan1">BURUNG HANTU</td>
+			</tr>
+			<!-- Baris-baris tambahan untuk hewan -->
+			<tr>
+				<td style="height:10px"></td>
+			</tr>
+			<tr>
+				<td onclick="burung.playclip()"><a href="#">
+						<img class="hewan" src="image/burung.png" alt="burung">
+					</a></td>
+				<td></td>
+				<td onclick="dinosaurus.playclip()"><a href="#">
+						<img class="hewan" src="image/dinosaurus.png" alt="dinosaurus">
+					</a></td>
+				<td></td>
+				<td onclick="domba.playclip()"><a href="#">
+						<img class="hewan" src="image/domba.png" alt="domba">
+					</a></td>
+				<td></td>
+				<td onclick="gajah.playclip()"><a href="#">
+						<img class="hewan" src="image/gajah.png" alt="gajah">
+					</a></td>
+				<td></td>
+				<td onclick="harimau.playclip()"><a href="#">
+						<img class="hewan" src="image/harimau.png" alt="harimau">
+					</a></td>
+				<td></td>
+				<td onclick="katak.playclip()"><a href="#">
+						<img class="hewan" src="image/katak.png" alt="katak">
+					</a></td>
+			</tr>
+			<tr>
+				<td class="hewan1">BURUNG</td>
+				<td></td>
+				<td class="hewan1">DINOSAURUS</td>
+				<td></td>
+				<td class="hewan1">DOMBA</td>
+				<td></td>
+				<td class="hewan1">GAJAH</td>
+				<td></td>
+				<td class="hewan1">HARIMAU</td>
+				<td></td>
+				<td class="hewan1">KATAK</td>
+			</tr>
+			<!-- Baris-baris tambahan untuk hewan -->
+			<tr>
+				<td style="height:10px"></td>
+			</tr>
+			<tr>
+				<td onclick="kucing.playclip()"><a href="#">
+						<img class="hewan" src="image/kucing.png" alt="kucing">
+					</a></td>
+				<td></td>
+				<td onclick="monyet.playclip()"><a href="#">
+						<img class="hewan" src="image/monyet.png" alt="monyet">
+					</a></td>
+				<td></td>
+				<td onclick="kuda.playclip()"><a href="#">
+						<img class="hewan" src="image/kuda.png" alt="kuda">
+					</a></td>
+				<td></td>
+				<td onclick="lumbalumba.playclip()"><a href="#">
+						<img class="hewan" src="image/lumba-lumba.png" alt="lumba-lumba">
+					</a></td>
+				<td></td>
+				<td onclick="paus.playclip()"><a href="#">
+						<img class="hewan" src="image/paus.png" alt="paus">
+					</a></td>
+				<td></td>
+				<td onclick="sapi.playclip()"><a href="#">
+						<img class="hewan" src="image/sapi.png" alt="sapi">
+					</a></td>
+			</tr>
+			<tr>
+				<td class="hewan1">KUCING</td>
+				<td></td>
+				<td class="hewan1">MONYET</td>
+				<td></td>
+				<td class="hewan1">KUDA</td>
+				<td></td>
+				<td class="hewan1">LUMBA-LUMBA</td>
+				<td></td>
+				<td class="hewan1">PAUS</td>
+				<td></td>
+				<td class="hewan1">SAPI</td>
+			</tr>
+			<tr>
+				<td style="height:10px"></td>
+			</tr>
+			<tr>
+				<td onclick="serigala.playclip()"><a href="#">
+						<img class="hewan" src="image/serigala.png" alt="serigala">
+					</a></td>
+				<td></td>
+				<td onclick="ular.playclip()"><a href="#">
+						<img class="hewan" src="image/ular.png" alt="ular">
+					</a></td>
+			</tr>
+			<tr>
+				<td class="hewan1">SERIGALA</td>
+				<td></td>
+				<td class="hewan1">ULAR</td>
+			</tr>
+		</table>
+
+		<div id="navigasi1">
+			<ul>
+				<li><a href="../index.html">KEMBALI</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+
+</html>

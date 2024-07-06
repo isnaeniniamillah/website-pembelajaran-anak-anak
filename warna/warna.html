@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Willen Study</title>
+	<script src='suara.js' type='text/javascript'></script>
+	<style>
+		/* Tambahkan style untuk tampilan yang lebih menarik */
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #87CEEB;
+			/* Mengatur warna latar belakang menjadi biru muda */
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		#container {
+			padding: 20px;
+		}
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+		}
+
+		td {
+			padding: 10px;
+			text-align: center;
+		}
+
+		.warna {
+			width: 150px;
+			height: 100px;
+			/* Menghapus border-radius untuk membuat kotak */
+			transition: transform 0.3s;
+			cursor: pointer;
+		}
+
+		.warna:hover {
+			transform: scale(1.2);
+		}
+
+		.warna1 {
+			font-size: 14px;
+			font-weight: bold;
+		}
+
+		#navigasi1 {
+			margin-top: 20px;
+			width: 100%;
+			text-align: center;
+		}
+
+		#navigasi1 ul {
+			list-style-type: none;
+			padding: 0;
+			display: inline-block;
+			margin: 0 auto;
+		}
+
+		#navigasi1 ul li {
+			display: inline;
+			margin-right: 10px;
+		}
+
+		#navigasi1 ul li a {
+			text-decoration: none;
+			color: #333;
+			font-weight: bold;
+			font-size: 16px;
+			display: inline-block;
+			padding: 10px 20px;
+			border: 2px solid #333;
+			border-radius: 5px;
+			transition: all 0.3s ease;
+		}
+
+		#navigasi1 ul li a:hover {
+			background-color: #333;
+			color: #fff;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div id="container">
+		<table>
+			<tr>
+				<td onclick="merah.playclip()"><a href="#">
+						<div class="warna" style="background-color:red"></div>
+					</a></td>
+				<td style="width:10px"></td>
+				<td onclick="biru.playclip()"><a href="#">
+						<div class="warna" style="background-color:blue"></div>
+					</a></td>
+				<td style="width:10px"></td>
+				<td onclick="hijau.playclip()"><a href="#">
+						<div class="warna" style="background-color:green"></div>
+					</a></td>
+				<td style="width:10px"></td>
+				<td onclick="oranye.playclip()"><a href="#">
+						<div class="warna" style="background-color:orange"></div>
+					</a></td>
+				<td style="width:10px"></td>
+				<td onclick="kuning.playclip()"><a href="#">
+						<div class="warna" style="background-color:yellow"></div>
+					</a></td>
+				<td style="width:10px"></td>
+				<td onclick="pink.playclip()"><a href="#">
+						<div class="warna" style="background-color:pink"></div>
+					</a></td>
+			</tr>
+			<tr>
+				<td class="warna1">MERAH</td>
+				<td style="width:10px"></td>
+				<td class="warna1">BIRU</td>
+				<td style="width:10px"></td>
+				<td class="warna1">HIJAU</td>
+				<td style="width:10px"></td>
+				<td class="warna1">ORANYE</td>
+				<td style="width:10px"></td>
+				<td class="warna1">KUNING</td>
+				<td style="width:10px"></td>
+				<td class="warna1">PINK</td>
+			</tr>
+			<!-- Baris-baris tambahan untuk warna -->
+			<tr>
+				<td style="height:10px"></td>
+			</tr>
+			<tr>
+				<td onclick="hitam.playclip()"><a href="#">
+						<div class="warna" style="background-color:black"></div>
+					</a></td>
+				<td></td>
+				<td onclick="coklat.playclip()"><a href="#">
+						<div class="warna" style="background-color:brown"></div>
+					</a></td>
+				<td></td>
+				<td onclick="abu.playclip()"><a href="#">
+						<div class="warna" style="background-color:gray"></div>
+					</a></td>
+				<td></td>
+				<td onclick="ungu.playclip()"><a href="#">
+						<div class="warna" style="background-color:purple"></div>
+					</a></td>
+				<td></td>
+				<td onclick="birumuda.playclip()"><a href="#">
+						<div class="warna" style="background-color:#00BFFF"></div>
+					</a></td>
+				<td></td>
+				<td onclick="silver.playclip()"><a href="#">
+						<div class="warna" style="background-color:silver"></div>
+					</a></td>
+			</tr>
+			<tr>
+				<td class="warna1">HITAM</td>
+				<td></td>
+				<td class="warna1">COKLAT</td>
+				<td></td>
+				<td class="warna1">ABU-ABU</td>
+				<td></td>
+				<td class="warna1">UNGU</td>
+				<td></td>
+				<td class="warna1">BIRU MUDA</td>
+				<td></td>
+				<td class="warna1">SILVER</td>
+			</tr>
+			<!-- Baris-baris tambahan untuk warna -->
+			<tr>
+				<td style="height:10px"></td>
+			</tr>
+			<tr>
+				<td onclick="hijaumuda.playclip()"><a href="#">
+						<div class="warna" style="background-color:#00FF00"></div>
+					</a></td>
+				<td></td>
+				<td onclick="magenta.playclip()"><a href="#">
+						<div class="warna" style="background-color:#FF00FF"></div>
+					</a></td>
+				<td></td>
+				<td onclick="maroon.playclip()"><a href="#">
+						<div class="warna" style="background-color:maroon"></div>
+					</a></td>
+				<td></td>
+				<td onclick="gold.playclip()"><a href="#">
+						<div class="warna" style="background-color:gold"></div>
+					</a></td>
+				<td></td>
+				<td onclick="birutua.playclip()"><a href="#">
+						<div class="warna" style="background-color:#00008B"></div>
+					</a></td>
+				<td></td>
+				<td onclick="putih.playclip()"><a href="#">
+						<div class="warna" style="background-color:white"></div>
+					</a></td>
+			</tr>
+			<tr>
+				<td class="warna1">HIJAU MUDA</td>
+				<td></td>
+				<td class="warna1">MAGENTA</td>
+				<td></td>
+				<td class="warna1">MAROON</td>
+				<td></td>
+				<td class="warna1">GOLD</td>
+				<td></td>
+				<td class="warna1">BIRU TUA</td>
+				<td></td>
+				<td class="warna1">PUTIH</td>
+			</tr>
+		</table>
+
+		<div id="navigasi1">
+			<ul>
+				<li><a href="../index.html">KEMBALI</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+
+</html>
